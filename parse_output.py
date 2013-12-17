@@ -12,7 +12,7 @@ for line in sys.stdin:
     line = line.strip()
     if line.startswith('Example:'):
         question = qpat.findall(line)[0]
-    if line.startswith('Pred@0000:'):
+    if line.startswith('Part@0000:'):
         answers = ppat.findall(line)
         score = float(spat.findall(line)[0])
         deriv = dpat.findall(line)[0]
