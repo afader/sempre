@@ -1,0 +1,123 @@
+UnaryLexicon.maxEntries	1000
+UnaryLexicon.unaryLexiconFilePath	lib/fb_data/6/unaryInfoStringAndAlignment.txt
+UnaryLexicon.pruneLexicon	false
+UnaryLexicon.pruneBeamSize	5
+UnaryLexicon.unaryFilterThreshold	5
+UnaryLexicon.verbose	0
+BinaryLexicon.maxEntries	1000
+BinaryLexicon.prepDropNormalization	true
+BinaryLexicon.binaryLexiconFilesPath	lib/fb_data/6/binaryInfoStringAndAlignment.txt
+BinaryLexicon.pruneLexicon	false
+BinaryLexicon.pruneBeamSize	5
+BinaryLexicon.verbose	0
+BinaryLexicon.useOnlyJaccard	false
+BinaryLexicon.keyToSortBy	Intersection_size_typed
+EntityLexicon.maxEntries	1000
+EntityLexicon.numOfDocs	10000
+EntityLexicon.exactMatchIndex	
+EntityLexicon.inexactMatchIndex	lib/lucene/4.4/inexact/
+Parser.printAllPredictions	false
+Parser.maxPrintedPredictions	2147483647
+Parser.coarsePrune	true
+Parser.monotonicBeam	false
+Parser.verbose	0
+Parser.executeTopFormulaOnly	false
+Parser.evaluateValuesAndFormulas	true
+MergeFn.hardTypeCheck	true
+MergeFn.verbose	0
+FreebaseInfo.schemaPath	lib/fb_data/93.exec/schema.ttl
+Dataset.inPaths	train,trec.sempretrain.txt
+Dataset.maxExamples	
+Dataset.trainFrac	0.8
+Dataset.devFrac	0.2
+Dataset.splitRandom	1
+Dataset.maxTokens	2147483647
+Dataset.readLispTreeFormat	true
+SelectFn.verbose	0
+LanguageInfo.annotators	tokenize ssplit pos lemma ner
+LanguageInfo.useAnnotators	true
+LanguageInfo.caseSensitive	false
+DescriptionValue.verbose	false
+Learner.maxTrainIters	6
+Learner.batchSize	1
+Learner.staticFeaturePrefixes	
+Learner.outputPredDerivations	false
+Learner.beamSizeIncreaseFactor	1.0
+Learner.beamSizePerIteration	
+Learner.dumpFeaturesAndCompatibility	false
+Learner.alwaysUpdate	false
+Learner.partialReward	true
+Learner.binaryLogistic	false
+Learner.l2Reg	false
+Learner.l2RegCoefficient	0.0
+Learner.l1Reg	false
+Learner.l1RegCoefficient	0.0
+Learner.binaryLogisticThrottledUpdates	false
+SemanticFn.trackLocalChoices	false
+log.maxIndLevel	10
+log.msPerLine	0
+log.file	state/execs/trectrain.exec/log
+log.stdout	true
+log.note	
+log.forcePrint	false
+log.maxPrintErrors	10000
+JoinFn.hardTypeCheck	true
+JoinFn.verbose	0
+BridgeFn.verbose	0
+BridgeFn.looseEntBridge	false
+Main.interactive	false
+SparqlExecutor.maxResults	10
+SparqlExecutor.connectTimeoutMs	60000
+SparqlExecutor.readTimeoutMs	60000
+SparqlExecutor.cachePath	SparqlExecutor.cache
+SparqlExecutor.endpointUrl	http://localhost:3093/sparql
+SparqlExecutor.returnTable	false
+SparqlExecutor.lambdaAllowDiagonals	false
+SparqlExecutor.includeEntityNames	true
+SparqlExecutor.verbose	0
+WordDistance.wordVectorFile	
+WordDistance.distanceMethod	cosine
+BeamParser.beamSize	200
+BeamParser.maxNewTreesPerSpan	2147483647
+Builder.packageName	edu.stanford.nlp.sempre
+Builder.inParamsPath	
+Builder.executor	SparqlExecutor
+Params.defaultWeight	0.0
+Params.initWeightsRandomly	false
+Params.initRandom	1
+Params.initStepSize	1.0
+Params.stepSizeReduction	0.0
+Params.adaptiveStepSize	true
+Params.dualAveraging	false
+exec.monitor	true
+exec.execDir	state/execs/trectrain.exec
+exec.execPoolDir	
+exec.overwriteExecDir	true
+exec.printOptionsAndExit	false
+exec.miscOptions	
+exec.addToView	0
+exec.charEncoding	
+exec.jarFiles	
+exec.startMainTrack	true
+LexiconFn.maxDistance	100.0
+LexiconFn.entityMaxDistance	2.147483647E9
+LexiconFn.minPopularity	0.0
+LexiconFn.verbose	0
+LexiconFn.cachePath	LexiconFn.cache
+LexiconFn.lexiconClassName	edu.stanford.nlp.sempre.fbalignment.lexicons.Lexicon
+LexiconFn.cacheEntitiesOnly	true
+LexiconFn.entitySearchStrategy	inexact
+Master.scriptPaths	
+Master.newExamplesPath	
+Master.logPath	
+Master.onlineLearnExamples	false
+FeatureExtractor.featureDomains	basicStats alignmentScores tokensDistance context skipPos joinPos wordSim tokenMatch opCount constant denotation whType
+FeatureExtractor.disableDenotationFeatures	false
+FeatureExtractor.useAllFeatures	false
+FeatureExtractor.conjoinAllLemmas	false
+Grammar.inPaths	data/emnlp2013.grammar
+Grammar.tags	webquestions bridge pivot
+Grammar.semanticFnPackage	edu.stanford.nlp.sempre
+Grammar.binarizeRules	true
+Derivation.showValues	true
+Derivation.showRules	false

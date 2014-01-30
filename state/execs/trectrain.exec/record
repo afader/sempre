@@ -1,0 +1,4 @@
+numTokenTypes	1059
+numTokensPerExample	4/ << 8.426 ~ 2.563 >> /20 (427)
+numExamples.train	341
+numExamples.dev	86
